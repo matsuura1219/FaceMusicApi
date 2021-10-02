@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Git\FaceMusic-WebApi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+688495081.index
+1492982762.index
+1193639846.index
+4015016850.index
+4138796677.index
+2829235595.index

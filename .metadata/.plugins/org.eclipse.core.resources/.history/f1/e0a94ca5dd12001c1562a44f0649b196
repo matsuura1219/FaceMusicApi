@@ -1,0 +1,29 @@
+package dao;
+
+import java.util.ArrayList;
+
+import bean.MusicBean;
+
+/** EmotionAPIのDAOクラスです **/
+
+public class EmotionDao {
+
+
+	/** コンストラクタ **/
+	public EmotionDao () {
+
+	}
+
+
+	/**
+	 * 引数に応じたMusicBeanを返却する関数です
+	 */
+	public ArrayList<MusicBean> findMusic (float anger, float contempt, float disgust, float fear, float happiness, float neutral, float sadness, float surprise, int from, int to) {
+
+		ArrayList<MusicBean> beanList = new ArrayList<MusicBean>();
+
+		return null;
+
+	}
+
+}

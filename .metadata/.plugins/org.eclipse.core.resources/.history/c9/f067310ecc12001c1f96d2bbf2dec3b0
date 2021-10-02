@@ -1,0 +1,11 @@
+package model;
+
+import java.io.Serializable;
+
+/**  **/
+public class MusicModel implements Serializable {
+
+	// シリアライズを宣言したクラスのバージョンで、クラスの構造を変更した場合に変更すべき変数です
+	private static final long serialVersionUID = 1L;
+
+}

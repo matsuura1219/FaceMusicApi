@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/ローカルホスト の Tomcat7 (Java8)-config" deployDir="wtpwebapps" hostname="localhost" id="ローカルホスト の Tomcat7 (Java8)" name="ローカルホスト の Tomcat7 (Java8)" runtime-id="Tomcat7 (Java7)" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="FaceMusicApi::org.eclipse.jst.j2ee.server:FaceMusicApi::jst.web::2.3"/>
+  </server>
+</servers>

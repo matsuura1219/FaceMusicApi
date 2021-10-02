@@ -1,0 +1,56 @@
+package controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import util.Constants;
+
+/**
+ * 感情に応じたSpotify楽曲のIDを返却するコントローラです。
+ */
+
+public class GetMusicForEmotions extends HttpServlet {
+
+	/** 定数 **/
+
+	// シリアライズを宣言したクラスのバージョンで、クラスの構造を変更した場合に変更すべき変数です
+	private static final long serialVersionUID = 1L;
+
+	/** コンストラクタ **/
+    public GetMusicForEmotions() {
+        super();
+
+    }
+
+    /** GET関数です **/
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		// リクエストパラメータを取得します
+
+		float anger = Float.parseFloat(request.getParameter(Constants.ANGER));
+		float contempt = Float.parseFloat(request.getParameter(Constants.CONTEMPT));
+		float disgust = Float.parseFloat(request.getParameter(Constants.DISGUST));
+		float fear = Float.parseFloat(request.getParameter(Constants.FEAR));
+		float happiness = Float.parseFloat(request.getParameter(Constants.HAPPINESS));
+		float neutral = Float.parseFloat(request.getParameter(Constants.NEUTRAL));
+		float sadness = Float.parseFloat(request.getParameter(Constants.SADNESS));
+		float surprise = Float.parseFloat(request.getParameter(Constants.SURPRISE));
+
+		int from = Integer.parseInt(request.getParameter("from"));
+		int to = Integer.parseInt(request.getParameter(Constants.TO));
+
+
+
+	}
+
+
+	/** POST関数です **/
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+}

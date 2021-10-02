@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Git\FaceMusic-WebApi\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3489861820.index
+\FaceMusicApi\src\main\java
+C:\Git\FaceMusic-WebApi\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2825724044.index
+\FaceMusicWebApi\src\main\resources

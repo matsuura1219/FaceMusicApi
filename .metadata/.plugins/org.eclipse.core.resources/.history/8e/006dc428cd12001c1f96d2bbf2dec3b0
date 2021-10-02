@@ -1,0 +1,43 @@
+package util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+/** Databaseに関する処理をまとめたクラスです **/
+
+public class DbUtil {
+
+	/** 変数 **/
+
+	//接続オブジェクト
+	private Connection con;
+
+	/** 定数 **/
+
+	// DBサーバ名(ホスト名)
+	private final String SERVER = "facemusic-database.cvhwnuodjgqb.ap-northeast-1.rds.amazonaws.com";
+	// ユーザ名
+	private final String USER = "matsuurayuki";
+	// パスワード
+	private final String PASSWORD = "kawaijuku1219";
+	// 実行するSQL文
+	private String sql = "select * from music";
+
+	/**
+	 * DB接続用の関数です
+	 * @throws ClassNotFoundException
+	 */
+	public Connection connect() throws SQLException, ClassNotFoundException {
+
+		Class.forName("com.mysql.jdbc.Driver");
+
+		// 接続先URL
+		String url = "jdbc:mysql://" + SERVER + ":3306/music_metadata";
+		// 接続をします
+		con = DriverManager.getConnection(url, USER, PASSWORD);
+
+		return con;
+
+	}
+}

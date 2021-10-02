@@ -1,0 +1,8 @@
+package util;
+
+/** Databaseに関する処理をまとめたクラスです **/
+
+public class DbUtil {
+
+
+}
